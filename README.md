@@ -2,7 +2,7 @@
 
 Description: Track Coronavirus Cases in Uttar Pradesh District Wise &amp; Get Latest UP Coronavirus Updates. Get Regular Case Counts and Zones detailed Analytics Insights. Web App to track the cases of COVID-19 in Uttar Pradesh (UP), India with red, orange and green zone district area information.
 
-Technology: 
+# Technology: 
   HTML5,
   SCSS,
   Javascript,
@@ -12,6 +12,7 @@ Technology:
   DataTables,
   HighChats
  
-Source:
+# Source:
 API- https://api.covid19india.org/
-Latest Updates- https://www.mohfw.gov.in/
+Updates- https://www.mohfw.gov.in/
+Guidelines- World Health Organization (WHO)
