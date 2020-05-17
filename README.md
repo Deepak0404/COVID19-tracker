@@ -10,7 +10,7 @@ Description: Track Coronavirus Cases in Uttar Pradesh District Wise &amp; Get La
   Bootstrap framework,
   PWA,
   DataTables,
-  HighChats
+  HighCharts
  
 # Source:
 API- https://api.covid19india.org/
