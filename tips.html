@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <meta name="description" content="Uttar Pradesh COVID-19 Tracker | Track Coronavirus Cases in Uttar Pradesh District Wise & Get Latest UP Coronavirus Updates. Get Regular Case Counts and Zones detailed Analytics Insights">
+    <meta name="keywords" content="up corona cases, uttar pradesh corona cases, up coronavirus, up corona tracker, coronavirus, up case counts, uttar pradesh coronavirus news, up corona cases district wise list, up zones">
+    <meta name="author" content="Deepak Saini">
+    <meta name="theme-color" content="#ef5350">
+    <meta name="msapplication-navbutton-color" content="#ef5350">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#ef5350">
+    <meta name="google-site-verification" content="google-site-verification=oKOhOPOiB5LaQmQqzCFllbF_Y3iZYZMB05FXKaghmhA">
+    <meta property="og:url" content="https://www.covid19-tracker.in/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="COVID-19 Tracker | Track corona virus cases in UP district wise">
+    <meta property="og:description" content="Track Coronavirus Cases in Uttar Pradesh District Wise & Get Latest UP Coronavirus Updates. Get Regular Case Counts and Zones detailed Analytics Insights">
+    <meta property="og:image" content="https://www.covid19-tracker.in/img/coronavirus.jpg">
+    <link rel="manifest" href="manifest.json">
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="https://www.covid19-tracker.in/img/favicon.ico">
+    <link rel="canonical" href="https://www.covid19-tracker.in/">
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com/">
+    <link rel="preconnect" href="https://cdn.datatables.net/">
+    <link rel="preconnect" href="https://fonts.googleapis.com/">
+    <link rel="preconnect" href="https://www.googletagmanager.com/">
+    <title>COVID-19 Tracker | Corona Virus Prevention Tips by WHO</title>
+    <!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script><![endif]-->
+	<!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script><![endif]-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/datatables/1.10.20/css/dataTables.bootstrap4.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.datatables.net/responsive/2.2.3/css/responsive.dataTables.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/fontawesome.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/solid.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.min.css">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-165389931-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-165389931-1');
+    </script>
+</head>
+<body>
+    <nav class="navbar navbar-light bg-light navbar-expand-lg sticky-top py-0 py-sm-2">
+        <div class="container">
+            <a class="navbar-brand text-sm-center text-md-left" href="index.html">Covid-19 Tracker <sup class="blink">LIVE</sup></a>
+            <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse flex-xl-grow-0" id="navbar">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>                    
+                    <li class="nav-item">
+                        <a class="nav-link" href="updates.html">Latest Updates</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="tips.html">Prevention Tips</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://play.google.com/store/apps/details?id=nic.goi.aarogyasetu&hl=en_IN" target="_blank">Download Aarogya Setu</a>
+                    </li>
+                    <!-- <li class="nav-item">
+                        <a class="nav-link" href="#">About Us</a>
+                    </li> -->
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <section id="tips">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1 class="title text-md-left text-center my-3">World Health Organization Guidelines for Coronavirus</h1>
+                    <div class="card mb-4">
+                        <div class="card-header"><i class="fas fa-hand-point-right"></i> Clean your hands frequently</div>
+                        <div class="card-body">
+                            <p class="card-text">Regularly and thoroughly clean your hands with an alcohol-based hand rub or wash them with soap and water. Why? Washing your hands with soap and water or using alcohol-based hand rub kills viruses that may be on your hands.</p>
+                        </div>
+                    </div>
+                    <div class="card mb-4">
+                        <div class="card-header"><i class="fas fa-hand-point-right"></i> Maintain social distancing</div>
+                        <div class="card-body">
+                            <p class="card-text">Maintain at least 1 metre (3 feet) distance between yourself and others. Why? When someone coughs, sneezes, or speaks they spray small liquid droplets from their nose or mouth which may contain virus. If you are too close, you can breathe in the droplets, including the COVID-19 virus if the person has the disease.</p>
+                        </div>
+                    </div>
+                    <div class="card mb-4">
+                        <div class="card-header"><i class="fas fa-hand-point-right"></i> Avoid going to crowded places</div>
+                        <div class="card-body">
+                            <p class="card-text">Avoid going to crowded places. Why? Where people come together in crowds, you are more likely to come into close contact with someone that has COIVD-19 and it is more difficult to maintain physical distance of 1 metre (3 feet).</p>
+                        </div>
+                    </div>
+                    <div class="card mb-4">
+                        <div class="card-header"><i class="fas fa-hand-point-right"></i> Avoid touching eyes, nose and mouth</div>
+                        <div class="card-body">
+                            <p class="card-text">Avoid touching eyes, nose and mouth. Why? Hands touch many surfaces and can pick up viruses. Once contaminated, hands can transfer the virus to your eyes, nose or mouth. From there, the virus can enter your body and infect you.</p>
+                        </div>
+                    </div>
+                    <div class="card mb-4">
+                        <div class="card-header"><i class="fas fa-hand-point-right"></i> Follow good respiratory hygiene</div>
+                        <div class="card-body">
+                            <p class="card-text">Make sure you, and the people around you, follow good respiratory hygiene. This means covering your mouth and nose with your bent elbow or tissue when you cough or sneeze. Then dispose of the used tissue immediately and wash your hands. Why? Droplets spread virus. By following good respiratory hygiene, you protect the people around you from viruses such as cold, flu and COVID-19.</p>
+                        </div>
+                    </div>
+                    <div class="card mb-4">
+                        <div class="card-header"><i class="fas fa-hand-point-right"></i> Stay home and self-isolate</div>
+                        <div class="card-body">
+                            <p class="card-text">Stay home and self-isolate even with minor symptoms such as cough, headache, mild fever, until you recover. Have someone bring you supplies. If you need to leave your house, wear a mask to avoid infecting others. Why? Avoiding contact with others will protect them from possible COVID-19 and other viruses.</p>
+                        </div>
+                    </div>
+                    <div class="card mb-4">
+                        <div class="card-header"><i class="fas fa-hand-point-right"></i> If you have fever, cough and difficulty breathing, seek medical care early</div>
+                        <div class="card-body">
+                            <p class="card-text">If you have a fever, cough and difficulty breathing, seek medical attention, but call by telephone in advance if possible and follow the directions of your local health authority. Why? National and local authorities will have the most up to date information on the situation in your area. Calling in advance will allow your health care provider to quickly direct you to the right health facility. This will also protect you and help prevent spread of viruses and other infections.</p>
+                        </div>
+                    </div>
+                    <div class="card mb-4">
+                        <div class="card-header"><i class="fas fa-hand-point-right"></i> Cover coughs and sneezes</div>
+                        <div class="card-body">
+                            <p class="card-text">Cover your mouth and nose with a tissue when you cough or sneeze or use the inside of your elbow. Throw used tissues in the trash.</p>
+                        </div>
+                    </div>
+                    <div class="card mb-4">
+                        <div class="card-header"><i class="fas fa-hand-point-right"></i> Wear a facemask if you are sick</div>
+                        <div class="card-body">
+                            <p class="card-text">You should wear a facemask when you are around other people (e.g., sharing a room or vehicle) and before you enter a healthcare provider’s office. If you are not able to wear a facemask (for example, because it causes trouble breathing), then you should do your best to cover your coughs and sneezes, and people who are caring for you should wear a facemask if they enter your room.</p>
+                        </div>
+                    </div>
+                    <div class="card mb-4">
+                        <div class="card-header"><i class="fas fa-hand-point-right"></i> Do not wear a facemask if you arent sick</div>
+                        <div class="card-body">
+                            <p class="card-text">You do not need to wear a facemask unless you are caring for someone who is sick (and they are not able to wear a facemask). Facemasks may be in short supply and they should be saved for caregivers.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="bg-dark py-3">
+        <div class="container">
+            <div class="row mb-2">
+                <!-- <div class="col-md-6 text-md-left text-center">Designed & Developed by Deepak</div> -->
+                <div class="col-md-6 text-md-left text-center">
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSeeaeahtHE47Vqaeh9izpMeU5gJrWrSLfLZ0XO1X0RPEkkFnQ/viewform" 
+                    target="_blank" rel="noopener">Feedback and Suggestions</a>
+                </div>
+                <div class="col-md-6 text-md-right text-center">
+                    <ul class="share m-0">
+                        <li>Share @</li>
+                        <li class="facebook">
+                            <a href="https://www.facebook.com/sharer/sharer.php?u=covid19-tracker.in" target="_blank" rel="noopener">
+                                <img src="img/facebook.png" alt="facebook icon" width="30px">
+                            </a>
+                        </li>
+                        <li class="twitter"><a class="twitter-share-button"
+                            href="https://twitter.com/share?url=https://www.covid19-tracker.in&text=Track Coronavirus Cases in Uttar Pradesh District Wise here" target="_blank" rel="noopener">
+                                <img src="img/twitter.png" alt="twitter icon" width="30px">
+                            </a>
+                        </li>
+                        <li class="whatsapp">
+                            <a href="https://api.whatsapp.com/send?text=Track Coronavirus Cases in Uttar Pradesh District Wise at https://www.covid19-tracker.in" data-action="share/whatsapp/share" target="_blank" rel="noopener">
+                                <img src="img/whatsapp.png" alt="Whatsapp icon" width="30px">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <p class="m-0 text-md-left text-center"><strong>Disclaimer : </strong>Data Sources are based on Various Websites, data accuracy may be affected. We are continuously monitoring related Websites, for regular updates on cases counts.</p>
+        </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.min.js" crossorigin="anonymous"></script>
+</body>
+</html>

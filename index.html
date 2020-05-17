@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <meta name="description" content="Uttar Pradesh COVID-19 Tracker | Track Coronavirus Cases in Uttar Pradesh District Wise & Get Latest UP Coronavirus Updates. Get Regular Case Counts and Zones detailed Analytics Insights">
+    <meta name="keywords" content="up corona cases, uttar pradesh corona cases, up coronavirus, up corona tracker, coronavirus, up case counts, uttar pradesh coronavirus news, up corona cases district wise list, up zones">
+    <meta name="author" content="Deepak Saini">
+    <meta name="theme-color" content="#ef5350">
+    <meta name="msapplication-navbutton-color" content="#ef5350">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#ef5350">
+    <meta name="google-site-verification" content="google-site-verification=oKOhOPOiB5LaQmQqzCFllbF_Y3iZYZMB05FXKaghmhA">
+    <meta property="og:url" content="https://www.covid19-tracker.in/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="COVID-19 Tracker | Track corona virus cases in UP district wise">
+    <meta property="og:description" content="Track Coronavirus Cases in Uttar Pradesh District Wise & Get Latest UP Coronavirus Updates. Get Regular Case Counts and Zones detailed Analytics Insights">
+    <meta property="og:image" content="https://www.covid19-tracker.in/img/coronavirus.jpg">
+    <link rel="manifest" href="manifest.json">
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="https://www.covid19-tracker.in/img/favicon.ico">
+    <link rel="canonical" href="https://www.covid19-tracker.in/">
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com/">
+    <link rel="preconnect" href="https://cdn.datatables.net/">
+    <link rel="preconnect" href="https://fonts.googleapis.com/">
+    <link rel="preconnect" href="https://www.googletagmanager.com/">
+    <title>COVID-19 Tracker | Corona cases in UP district wise</title>
+    <!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script><![endif]-->
+	<!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script><![endif]-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/datatables/1.10.20/css/dataTables.bootstrap4.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.datatables.net/responsive/2.2.3/css/responsive.dataTables.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/fontawesome.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/solid.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.min.css">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-165389931-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-165389931-1');
+    </script>
+</head>
+<body>
+    <nav class="navbar navbar-light bg-light navbar-expand-lg sticky-top py-0 py-sm-2">
+        <div class="container">
+            <a class="navbar-brand text-sm-center text-md-left" href="index.html">Covid-19 Tracker <sup class="blink">LIVE</sup></a>
+            <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse flex-xl-grow-0" id="navbar">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>                    
+                    <li class="nav-item">
+                        <a class="nav-link" href="updates.html">Latest Updates</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="tips.html">Prevention Tips</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://play.google.com/store/apps/details?id=nic.goi.aarogyasetu&hl=en_IN" target="_blank">Download Aarogya Setu</a>
+                    </li>
+                    <!-- <li class="nav-item">
+                        <a class="nav-link" href="#">About Us</a>
+                    </li> -->
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <section id="cards">
+        <div class="container">
+            <div class="row">
+                <img src="img/covid19-logo.png" alt="COVID-19" width="300px" class="img-fluid mx-auto my-3 covid19-logo">
+                <div class="marque col-md-12"><marquee behavior="" direction="">
+                    In India Total Confirmed: <strong id="INconfirmed"></strong>,
+                    Recovered: <strong id="INrecovered"></strong>,
+                    Deaths: <strong id="INdeaths"></strong> and
+                    Active: <strong id="INactive"></strong>
+                </marquee></div>
+                <h1 class="text-center mt-2 w-100">COVID-19 Live Updates of the Uttar Pradesh (UP), India</h1>
+                <p class="text-center mb-4 w-100">Last Updated: <i class="fas fa-calendar-alt"></i> <strong id="lastUpdate"></strong></p>
+            </div>
+            <div class="row">
+                <div class="col-xl-3 col-6">
+                    <div class="card bg-primary text-white text-center mb-4">
+                        <div class="card-header">Total Infected <i class="fas fa-viruses"></i></div>
+                        <div class="card-body p-3">
+                            <h3 class="card-title">
+                                <span class="count" id="totalConfirmed">0</span>
+                                <sub>[+<span id="deltaConfirmed">0</span>]</sub>
+                            </h3>
+                            <p class="card-text">Number of confirmed cases of COVID-19</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-6">
+                    <div class="card bg-success text-white text-center mb-4">
+                        <div class="card-header">Total Recovered <i class="fas fa-heartbeat"></i></div>
+                        <div class="card-body p-3">
+                            <h3 class="card-title">
+                                <span class="count" id="totalRecovered">0</span>
+                                <sub>[+<span id="deltaRecovered">0</span>]</sub>
+                            </h3>
+                            <p class="card-text">Number of recoveries from COVID-19</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-6">
+                    <div class="card bg-danger text-white text-center mb-4">
+                        <div class="card-header">Total Deaths <i class="fas fa-user-times"></i></div>
+                        <div class="card-body p-3">
+                            <h3 class="card-title">
+                                <span class="count" id="totalDeaths">0</span>
+                                <sub>[+<span id="deltaDeaths">0</span>]</sub>
+                            </h3>
+                            <p class="card-text">Number of deaths caused by COVID-19</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-6">
+                    <div class="card bg-info text-white text-center mb-4">
+                        <div class="card-header">Total Active <i class="fas fa-lightbulb"></i></div>
+                        <div class="card-body p-3">
+                            <h3 class="card-title">
+                                <span class="count" id="totalActive">0</span>
+                                <sub>[+<span id="deltaDeaths">0</span>]</sub>
+                            </h3>
+                            <p class="card-text">Number of active cases of COVID-19</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="updates">
+        <div class="container">
+            <div class="row">
+                <div class="offset-md-3 col-md-6">
+                    <div class="items-list rounded mb-4 p-3">
+                        <div class="row">
+                            <div class="col-4 text-center">
+                                <div class="item">
+                                    <a href="updates.html">
+                                        <img src="img/virus_icon.png" alt="virus icon" 
+                                        class="img-fluid rounded mb-2" width="80px">
+                                    </a>
+                                    <div class="item-body">
+                                        <h5 class="m-0">COVID-19 Latest Updates</h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-4 text-center">
+                                <div class="item">
+                                    <a href="tips.html">
+                                        <img src="img/avatar_mask_icon.png" alt="avatar mask icon" 
+                                            class="img-fluid rounded mb-2" width="80px">
+                                    </a>
+                                    <div class="item-body">
+                                        <h5 class="m-0">COVID-19 Awareness Info</h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-4 text-center">
+                                <div class="item">
+                                    <a href="https://play.google.com/store/apps/details?id=nic.goi.aarogyasetu&hl=en_IN" target="_blank">
+                                        <img src="img/aarogya_setu_app.png" alt="aarogya setu app" 
+                                            class="img-fluid rounded mb-2" width="80px">
+                                    </a>
+                                    <div class="item-body">
+                                        <h5 class="m-0">Download Aarogya Setu APP</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>  
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="chats" class="mb-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-6">
+                    <div class="card cumulative-spread mb-4 border-0">
+                        <div class="card-header text-white"><i class="fas fa-chart-line"></i> Cumulative Spread</i></div>
+                        <div class="card-body">
+                            <div id="lineChart"></div>
+                            <!-- <canvas id="lineChart" width="100%" height="50"></canvas> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-6">
+                    <div class="card daily-spread mb-4 border-0">
+                        <div class="card-header text-white"><i class="fas fa-chart-bar"></i> Daily Spread</div>
+                        <div class="card-body">
+                            <div id="barChart"></div>
+                            <!-- <canvas id="barChart" width="100%" height="50"></canvas> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="districtTable">
+        <div class="container">
+            <div class="card mb-4 border-0">
+                <div class="card-header text-white">Red, Orange & Green Zones</div>
+                <div class="card-body">
+                    <div class="table-responsive">
+                        <table class="table table-bordered table-hover bg-white border-0" id="dataTable" width="100%" cellspacing="0">
+                            <thead class="thead-dark">
+                                <tr>
+                                    <th>District</th>
+                                    <th>Confirmed</th>
+                                    <th>Recovered</th>
+                                    <th>Deaths</th>
+                                    <th>Active</th>
+                                </tr>
+                            </thead>
+                            <tbody id="tableData">
+                                <tr>
+                                    <td>Agra</td>
+                                    <td>536</td>
+                                    <td>104</td>
+                                    <td>14</td>
+                                    <td>418</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="bg-dark py-3">
+        <div class="container">
+            <div class="row mb-2">
+                <!-- <div class="col-md-6 text-md-left text-center">Designed & Developed by Deepak</div> -->
+                <div class="col-md-6 text-md-left text-center">
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSeeaeahtHE47Vqaeh9izpMeU5gJrWrSLfLZ0XO1X0RPEkkFnQ/viewform" 
+                    target="_blank" rel="noopener">Feedback and Suggestions</a>
+                </div>
+                <div class="col-md-6 text-md-right text-center">
+                    <ul class="share m-0">
+                        <li>Share @</li>
+                        <li class="facebook">
+                            <a href="https://www.facebook.com/sharer/sharer.php?u=covid19-tracker.in" target="_blank" rel="noopener">
+                                <img src="img/facebook.png" alt="facebook icon" width="30px">
+                            </a>
+                        </li>
+                        <li class="twitter"><a class="twitter-share-button"
+                            href="https://twitter.com/share?url=https://www.covid19-tracker.in&text=Track Coronavirus Cases in Uttar Pradesh District Wise here" target="_blank" rel="noopener">
+                                <img src="img/twitter.png" alt="twitter icon" width="30px">
+                            </a>
+                        </li>
+                        <li class="whatsapp">
+                            <a href="https://api.whatsapp.com/send?text=Track Coronavirus Cases in Uttar Pradesh District Wise at https://www.covid19-tracker.in" data-action="share/whatsapp/share" target="_blank" rel="noopener">
+                                <img src="img/whatsapp.png" alt="Whatsapp icon" width="30px">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <p class="m-0 text-md-left text-center"><strong>Disclaimer : </strong>Data Sources are based on Various Websites, data accuracy may be affected. We are continuously monitoring related Websites, for regular updates on cases counts.</p>
+        </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/datatables/1.10.20/js/jquery.dataTables.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/datatables/1.10.20/js/dataTables.bootstrap4.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.datatables.net/responsive/2.2.3/js/dataTables.responsive.min.js" crossorigin="anonymous"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js" crossorigin="anonymous"></script> -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/highcharts/8.1.0/highcharts.src.min.js" crossorigin="anonymous"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highcharts/8.1.0/highcharts.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highcharts/8.1.0/modules/series-label.min.js" crossorigin="anonymous"></script>
+    <script src="js/script.min.js"></script>
+</body>
+</html>

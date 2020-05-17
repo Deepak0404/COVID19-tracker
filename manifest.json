@@ -1,0 +1,35 @@
+{
+    "name": "Covid-19 Tracker",
+    "short_name": "Covid-19",
+    "theme_color": "#ef5350",
+    "background_color": "#eee",
+    "display": "standalone",
+    "scope": "/",
+    "start_url": "https://www.covid19-tracker.in/",
+    "description": "Uttar Pradesh COVID-19 Tracker | Track Coronavirus Cases in Uttar Pradesh District Wise & Get Latest UP Coronavirus Updates. Get Regular Case Counts and Zones detailed Analytics Insights",
+    "orientation": "any",
+    "icons": [
+        {
+        "src": "icons/icon-128x128.png",
+            "sizes": "128x128",
+            "type": "image/png"
+        }, {
+            "src": "icons/icon-144x144.png",
+            "sizes": "144x144",
+            "type": "image/png"
+        }, {
+            "src": "icons/icon-152x152.png",
+            "sizes": "152x152",
+            "type": "image/png"
+        }, {
+            "src": "icons/icon-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "icons/icon-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ]
+}
